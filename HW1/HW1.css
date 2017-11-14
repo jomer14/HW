@@ -1,0 +1,55 @@
+body{
+    background-color:darkorange;
+    margin:0;
+    padding: 0;
+}
+head{
+    background-color:blueviolet;
+}
+.center{
+    text-align: center;
+    background-color:skyblue;
+    padding: 8px;
+    margin-top: 0;
+}
+.nb {
+    text-align: center;
+    display: inline;
+    float:left;
+    display:block;
+    padding: 8px;
+    background-color:black;
+    color: azure;
+    font-size: 20px; 
+    margin-bottom: 0px;
+    margin-right: 0;
+}
+h1{
+    margin: 0px;
+    margin-top: 0;
+}
+.tb{
+    margin-top: 1px:
+}
+.end{
+    margin-right: 500px;
+}
+div{
+    display: flex;
+}
+ol{
+    margin: auto;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+dl{
+    margin: auto;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+table{
+    margin-top: 30px;
+    border-collapse: separate;
+    border-spacing: 15px;
+}
