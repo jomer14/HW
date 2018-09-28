@@ -18,22 +18,23 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
       
-      <title>Portfolio</title>
+      <title>HW 1</title>
   </head>
   <body>
-    <h1 class="center">Josh Omer's Portfolio</h1>
+    <h1 class="center">Homework 1</h1>
       <ul class="nb">
-        <li class="nb"><a href="Portfolio.html">Home</a></li>
-        <li class="nb"><a href="HW1PG1.html">Homework 1</a></li>
-        <li class="nb end">Homework 2</li>
+		<li class="nb"><a href="Portfolio.html">Portfolio</a></li>
+		<li class="nb"><a href="HW1 Home.html">Home</a></li>
+        <li class="nb"><a href="HW1PG1.html">One Column</a></li>
+        <li class="nb end"><a href="HW1PG2.html">Two Column</a></li>
       </ul>
 <div class="container">
      <div class="row">
          <div class="col"> 
              <dl>
                  <dt>Homework 1</dt>
-                 <dd>For homework 1 we were required to make a linked set of pages that had very basic requirements. Some of these requirements included having ordered lists, unordered lists, a table, multiple types of layouts, ect. In order to finish this lab I took the knowledge we learned in class and constructed acouple of very basic web pages to fufill the requirements. For my solution I had the most trouble with formatting the page with CSS and I found that I took coding with CSS too lightly.</dd>
-                 <dd>Page 1 Code.</dd>
+                 <dd>For homework 1 we were required to make a linked set of pages that had very basic requirements. Some of these requirements included having ordered lists, unordered lists, a table, multiple types of layouts, ect. In order to finish this lab I took the knowledge we learned in class and constructed a couple of very basic web pages to fufill the requirements. For my solution I had the most trouble with formatting the page with CSS and I found that I took coding with CSS too lightly. It required much more work and knowledge than I expected to style the page in a way that I desired.</dd>
+                 <dd>Page 1 Code:</dd>
                  <dd><pre><code><xmp>
                  
                  
@@ -106,7 +107,7 @@
 </html>
 
         </xmp></code></pre></dd>
-                 <dd>Page 2 Code.</dd>
+                 <dd>Page 2 Code:</dd>
                  <dd><pre><code><xmp> 
                  
                  
