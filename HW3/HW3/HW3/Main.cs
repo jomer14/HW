@@ -1,7 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
-public class Main
+public class main
 {
+    public static object Integer { get; private set; }
 
     static LinkedList<String> generateBinaryRepresentationList(int n)
     {
@@ -25,17 +29,17 @@ public class Main
         {
             //  print the front of queue 
             StringBuilder sb = q.pop();
-            output.add(sb.toString());
+            output.AddLast(sb.ToString());
 
             //  Make a copy
-            StringBuilder sbc = new StringBuilder(sb.toString());
+            StringBuilder sbc = new StringBuilder(sb.ToString());
 
             //  Left child
-            sb.append('0');
+            sb.Append('0');
             q.push(sb);
 
             //  Right child
-            sbc.append('1');
+            sbc.Append('1');
             q.push(sbc);
         }
 
@@ -43,10 +47,10 @@ public class Main
     }
 
     //  Driver program to test above function 
-    public static void main(String[] args)
+    static void Main(String[] args)
     {
         int n = 10;
-        if ((args.length < 1))
+        if ((args.Length < 1))
         {
             Console.WriteLine("Please invoke with the max value to print binary up to, like this:");
             Console.WriteLine("\tjava Main 12");
@@ -55,23 +59,24 @@ public class Main
 
         try
         {
-            n = Integer.parseInt(args[0]);
+            n = Int32.Parse(args[0]);
         }
-        catch (NumberFormatException e)
+        catch (FormatException e)
         {
             Console.WriteLine(("I\'m sorry, I can\'t understand the number: " + args[0]));
             return;
         }
 
-        LinkedList<String> output = Main.generateBinaryRepresentationList(n);
+        LinkedList<String> output = generateBinaryRepresentationList(n);
+
 
         //  Print it right justified.  Longest string is the last one.
         //  Print enough spaces to move it over the correct distance
-        int maxLength = output.getLast().length();
+        int maxLength = output.Last().Length;
         foreach (String s in output)
         {
             for (int i = 0; (i
-                        < (maxLength - s.length())); i++)
+                        < (maxLength - s.Length)); i++)
             {
                 Console.WriteLine(" ");
             }

@@ -17,7 +17,7 @@ public class LinkedQueue<T> : IQueueInterface<T>
     {
         if ((element == null))
         {
-            throw new NullPointerException();
+            throw new NullReferenceException();
         }
 
         if (this.isEmpty())
@@ -39,7 +39,9 @@ public class LinkedQueue<T> : IQueueInterface<T>
 
     public T pop()
     {
-        T tmp = null;
+        Type t = typeof(T);
+        Type tmp = Nullable.GetUnderlyingType(t);
+        tmp = null;
         if (this.isEmpty())
         {
             throw new QueueUnderflowException("The queue was empty when pop was invoked.");
